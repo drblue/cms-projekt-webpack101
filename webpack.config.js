@@ -7,6 +7,17 @@ module.exports = {
 		filename: 'bundle.js',
 		publicPath: '/dist'
 	},
-	module: {},
+	module: {
+		rules: [
+			{
+				test: /\.scss$/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				]
+			}
+		]
+	},
 	plugins: []
 };

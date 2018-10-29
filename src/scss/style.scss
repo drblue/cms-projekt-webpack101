@@ -1,0 +1,13 @@
+@import '../css/bootstrap.min.css';
+
+html, body {
+	height: 100%;
+}
+
+#kitten {
+	display: none;
+}
+
+#kitten.show {
+	display: block;
+}
